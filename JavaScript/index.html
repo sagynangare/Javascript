@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Introduction</title>
+	<script type="text/javascript">
+		/*
+		var myVariable = 29;
+		document.write(myVariable);
+		var bookprice = 29.758;
+		document.write(bookprice);
+		var string = "Sagar said to Priyanka I LOVE You Priyanka";
+		document.write(string);		*/
+		
+		var image_tracker = 'f';
+		function change(){
+			var image = document.getElementById('social');
+			if(image_tracker=='f'){
+				image.src = 'images/twitter.png';
+				image_tracker = 't';
+			}else{
+				image.src = 'images/facebook.png';
+				image_tracker = 'f';
+			}
+		}
+		
+	</script>
+</head>
+<body>
+<img src="images/facebook.png" alt="social logo" id ="social" onclick="change();">
+</body>
+</html>

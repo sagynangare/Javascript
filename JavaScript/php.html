@@ -1,0 +1,59 @@
+<html>
+<head>
+<body>
+<script type='text/javascript'>
+var str;
+str = 'Zulwh d surjudp (lq Sbwkrq, MdydVfulsw ru Uxeb) wr srsxodwh dqg wkhq vruw d\n\
+udqgrpob glvwulexwhg olvw ri 1 ploolrq lqwhjhuv, hdfk lqwhjhu kdylqj d ydoxh >= 1 dqg\n\
+<= 100 zlwkrxw xvlqj dqb exlowlq/hawhuqdo oleudub/ixqfwlrq iru vruwlqj.\n\
+Brxu surjudp vkrxog fduhixoob frqvlghu wkh lqsxw dqg frph xs zlwk wkh prvw hiilflhqw\n\
+vruwlqj vroxwlrq brx fdq wklqn ri. Surylgh wkh vsdfh dqg wlph frpsohalwb ri brxu\n\
+dojrulwkp';
+var len;
+len = strlen(str);
+var result;
+result = '';
+console.log(str);
+console.log('<br/><br/>');
+var i;
+for (i = 0; i < len; i++) {
+    var ascii;
+    ascii = ord(str[i]);
+    if (ascii < 65 || ascii > 122 || ascii > 90 && ascii < 97) {
+        result += str[i];
+    } else {
+        if (ascii == 65) {
+            ascii = 88;
+        } else {
+            if (ascii == 66) {
+                ascii = 89;
+            } else {
+                if (ascii == 67) {
+                    ascii = 90;
+                } else {
+                    if (ascii == 97) {
+                        ascii = 120;
+                    } else {
+                        if (ascii == 98) {
+                            ascii = 121;
+                        } else {
+                            if (ascii == 99) {
+                                ascii = 122;
+                            } else {
+                                ascii = ascii - 3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        var char;
+        char = chr(ascii);
+        result += char;
+    }
+	}
+console.log(result.'<br/>');
+</script>
+</body>
+</head>
+</html>

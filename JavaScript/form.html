@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Introduction</title>
+	<script type="text/javascript">
+		function write_name(){
+			var welcome_parra = document.getElementById('Welcome');
+			var name = document.getElementById('name');
+			welcome_parra.innerHTML = "Welcome " + name.value;
+		}
+		
+	</script>
+</head>
+<body>
+	<p id="Welcome"></p>
+	<form>
+		What is your name:<input type="text" id="name"/></br>
+		<input type="button" value="done" onclick="write_name()"/>
+	</form>
+</body>
+</html>

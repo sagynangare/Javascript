@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>JavaScript</title>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".hide").click(function(){
+			$("p").hide();
+		});
+		$(".show").click(function(){
+			$("p").show();
+		});
+		});
+</script>
+</head>
+<body>
+	<p>clicking "hide" button,will make paragraph text disappear</p>
+	<button class="hide">Hide</button>
+	<button class="show">Show!</button>
+</body>
+</html>

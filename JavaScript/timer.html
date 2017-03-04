@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Introduction</title>
+	<script type="text/javascript">
+	
+		var image_tracker = 'f';
+		function change(){
+			var image = document.getElementById('social');
+			if(image_tracker=='f'){
+				image.src = 'images/twitter.png';
+				image_tracker = 't';
+			}else{
+				image.src = 'images/facebook.png';
+				image_tracker = 'f';
+			}
+		}
+		var timer = setInterval('change()',2000);
+	
+	</script>
+</head>
+<body>
+<img src="images/facebook.png" alt="social logo" id ="social" onclick="clearInterval(timer);">
+</body>
+</html>

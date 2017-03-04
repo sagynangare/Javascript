@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+<title>You are a legend</title>
+</head>
+<body>
+	
+<script>
+	function changeBgRed(){
+		document.bgColor = "Red";
+		
+	}
+	function changeBgYellow(){
+		document.bgColor = "Yellow";
+	}
+</script>
+<span onclick="changeBgRed();">Red</span><br>
+<span onclick="changeBgYellow();">ReYellow</span><br>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Introduction</title>
+	<script type="text/javascript">
+		function weird(x) {
+			var tmp = 3;
+			return function(y) {
+			return x + y + ++tmp;
+			}
+		}
+		var funny = weird(2);
+		var final_answer = funny(10);
+
+		
+	</script>
+</head>
+<body>
+	<p id="Welcome"></p>
+	<form>
+		What is value of x:<input type="int" /></br>
+		
+	</form>
+</body>
+</html>

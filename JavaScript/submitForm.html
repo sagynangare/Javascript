@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Introduction</title>
+	<script type="text/javascript">
+		function check_info(){
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			
+			if(username=="" || password==""){
+				alert('Please fill in all fields');
+				return false;
+			}
+			else{
+				return true;
+			
+			}
+		
+		}
+		
+	</script>
+</head>
+<body>
+	
+	<form action="submitForm1.html" method="post" onsubmit="return check_info();">
+		username:<input type="text" name="username" id="username"/>
+		password:<input type="password" name="password" id="password"/>
+		<input type="submit" name="login"/>
+	
+	</form>
+</body>
+</html>
